@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Start TV</string>
+
+    <string name="tile_magenta_tv_title">MAGENTA TV</string>
+    <string name="tile_magenta_tv_subtitle">Sport i Republika</string>
+    <string name="tile_magenta_tv_description">MAGENTA TV – Sport i Republika</string>
+
+    <string name="tile_wpolsce24_title">wPOLSCE24</string>
+    <string name="tile_wpolsce24_subtitle">Darmowy Stream</string>
+    <string name="tile_wpolsce24_description">wPOLSCE24 – Darmowy Stream</string>
+
+    <string name="error_magenta_tv_not_installed">MagentaTV nie jest zainstalowana. Otwieram Google Play.</string>
+    <string name="error_no_app_to_open_store">Brak aplikacji do otwarcia sklepu Google Play.</string>
+    <string name="error_no_app_to_open_link">Brak aplikacji do otwarcia linku.</string>
+</resources>

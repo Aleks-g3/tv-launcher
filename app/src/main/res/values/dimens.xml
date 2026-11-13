@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 48dp keyline keeps content inside the safe area on TV overscan. -->
+    <dimen name="screen_keyline">48dp</dimen>
+    <dimen name="tile_gap">32dp</dimen>
+    <dimen name="tile_padding">40dp</dimen>
+    <dimen name="tile_corner_radius">16dp</dimen>
+    <dimen name="tile_focus_ring_corner_radius">13dp</dimen>
+    <dimen name="tile_focus_ring_width">6dp</dimen>
+    <dimen name="tile_focus_ring_inset">3dp</dimen>
+    <dimen name="tile_text_spacing">10dp</dimen>
+    <dimen name="tile_title_text_size">44sp</dimen>
+    <dimen name="tile_subtitle_text_size">26sp</dimen>
+</resources>

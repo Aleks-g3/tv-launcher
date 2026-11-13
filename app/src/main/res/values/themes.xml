@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.StartTv" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@color/screen_background</item>
+        <item name="colorAccent">@color/brand_magenta_tv</item>
+    </style>
+
+    <style name="TileText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="TileText.Title">
+        <item name="android:textColor">@color/tile_text_primary</item>
+        <item name="android:textSize">@dimen/tile_title_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.04</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <style name="TileText.Subtitle">
+        <item name="android:textColor">@color/tile_text_primary</item>
+        <item name="android:textSize">@dimen/tile_subtitle_text_size</item>
+        <item name="android:letterSpacing">0.04</item>
+    </style>
+
+</resources>

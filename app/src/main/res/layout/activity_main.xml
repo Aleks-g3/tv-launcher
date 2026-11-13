@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_background"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:padding="@dimen/screen_keyline"
+    tools:ignore="Overdraw">
+
+    <LinearLayout
+        android:id="@+id/tile_magenta_tv"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/tile_magenta_tv"
+        android:clickable="true"
+        android:contentDescription="@string/tile_magenta_tv_description"
+        android:descendantFocusability="blocksDescendants"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:foreground="@drawable/tile_selector"
+        android:gravity="center_vertical|start"
+        android:nextFocusLeft="@id/tile_wpolsce24"
+        android:nextFocusRight="@id/tile_wpolsce24"
+        android:orientation="vertical"
+        android:padding="@dimen/tile_padding">
+
+        <TextView
+            style="@style/TileText.Title"
+            android:importantForAccessibility="no"
+            android:text="@string/tile_magenta_tv_title" />
+
+        <TextView
+            style="@style/TileText.Subtitle"
+            android:importantForAccessibility="no"
+            android:layout_marginTop="@dimen/tile_text_spacing"
+            android:text="@string/tile_magenta_tv_subtitle" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tile_wpolsce24"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/tile_gap"
+        android:layout_weight="1"
+        android:background="@drawable/tile_wpolsce24"
+        android:clickable="true"
+        android:contentDescription="@string/tile_wpolsce24_description"
+        android:descendantFocusability="blocksDescendants"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:foreground="@drawable/tile_selector"
+        android:gravity="center_vertical|start"
+        android:nextFocusLeft="@id/tile_magenta_tv"
+        android:nextFocusRight="@id/tile_magenta_tv"
+        android:orientation="vertical"
+        android:padding="@dimen/tile_padding">
+
+        <TextView
+            style="@style/TileText.Title"
+            android:importantForAccessibility="no"
+            android:text="@string/tile_wpolsce24_title" />
+
+        <TextView
+            style="@style/TileText.Subtitle"
+            android:importantForAccessibility="no"
+            android:layout_marginTop="@dimen/tile_text_spacing"
+            android:text="@string/tile_wpolsce24_subtitle" />
+
+    </LinearLayout>
+
+</LinearLayout>

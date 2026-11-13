@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="screen_background">#121212</color>
+
+    <color name="brand_magenta_tv">#E20074</color>
+    <color name="brand_magenta_tv_deep">#B0005B</color>
+    <color name="brand_wpolsce24">#1F3A60</color>
+    <color name="brand_wpolsce24_deep">#15294A</color>
+
+    <color name="tile_text_primary">#FFFFFFFF</color>
+
+    <color name="tile_focus_ring">#FFFFFFFF</color>
+    <color name="tile_focus_overlay">#1FFFFFFF</color>
+    <color name="tile_pressed_overlay">#1F000000</color>
+</resources>

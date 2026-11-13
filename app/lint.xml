@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <!-- The Leanback launcher consumes a single 320x180 banner from drawable-xhdpi. -->
+    <issue
+        id="IconMissingDensityFolder"
+        severity="ignore" />
+</lint>
