@@ -46,19 +46,34 @@ Pozostałe przydatne zadania:
 
 ## Instalacja na Chromecast z Google TV
 
-1. Włącz *Debugowanie USB/ADB* w opcjach programistycznych urządzenia.
-2. Połącz się bezprzewodowo (paraowanie na ekranie TV):
+W telewizorze: **Ustawienia → System → Informacje** → 7× w „Android TV OS build”, następnie
+**Ustawienia → System → Opcje programisty → Debugowanie USB**. PC i TV muszą być w tej samej sieci.
 
-   ```bash
-   adb connect <IP_TV>:5555
-   adb install -r app/build/outputs/apk/debug/app-debug.apk
-   ```
+### Skrypt instalacyjny (Windows)
 
-3. Uruchom aplikację:
+```powershell
+.\scripts\install.ps1 -TvIp 192.168.1.50 -Build
+```
 
-   ```bash
-   adb shell am start -n pl.aleks.starttv/.MainActivity
-   ```
+Skrypt łączy się z telewizorem przez ADB (`<IP>:5555`), instaluje APK i uruchamia aplikację.
+
+| Parametr | Opis |
+| --- | --- |
+| `-TvIp` | adres IP telewizora (wymagany) |
+| `-Port` | port ADB, domyślnie `5555` |
+| `-Build` | uruchamia `assembleDebug` przed instalacją |
+| `-ApkPath` | wskazuje własny plik APK |
+
+Wymaga `adb` w `PATH` albo zmiennej `ANDROID_SDK_ROOT`; przy pierwszym połączeniu zaakceptuj
+okno „Zezwalaj na debugowanie USB” na ekranie TV.
+
+### Ręcznie przez ADB
+
+```bash
+adb connect <IP_TV>:5555
+adb install -r app/build/outputs/apk/debug/app-debug.apk
+adb shell am start -n pl.aleks.starttv/.MainActivity
+```
 
 Aplikacja pojawia się na ekranie głównym Google TV dzięki kategorii `LEANBACK_LAUNCHER`
 i banerowi telewizyjnemu `res/drawable-xhdpi/tv_banner.png` (320 × 180 px, wymóg launchera).
@@ -81,6 +96,8 @@ app/
         ├── layout/activity_main.xml
         ├── values/                      # colors, dimens, strings, themes
         └── xml/data_extraction_rules.xml
+scripts/
+└── install.ps1                          # instalacja APK na TV przez ADB
 ```
 
 ## Implementacja
